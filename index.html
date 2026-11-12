@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Vicente González, estudiante de Ingeniería Civil Informática en la Universidad San Sebastián, Concepción. Desarrollo full-stack, software y ciberseguridad.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Vicente González — Ingeniería Civil Informática</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Vicente González, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">VG<span>.</span></span>
+        <span class="brand-meta">
+          <strong>Vicente González</strong>
+          <span>Ing. Civil Informática</span>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#proyectos" data-nav>Proyectos <span>02</span></a>
+        <a href="#stack" data-nav>Stack <span>03</span></a>
+        <a href="#roadmap" data-nav>Roadmap <span>04</span></a>
+        <a href="#contacto" data-nav>Contacto <span>05</span></a>
+      </nav>
+
+      <a class="header-cta" href="#contacto">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Hablemos</span>
+        <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <span>Menú</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav aria-label="Navegación móvil">
+        <a href="#inicio"><span>00</span>Inicio</a>
+        <a href="#proyectos"><span>02</span>Proyectos</a>
+        <a href="#stack"><span>03</span>Stack</a>
+        <a href="#roadmap"><span>04</span>Roadmap</a>
+        <a href="#contacto"><span>05</span>Contacto</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <span class="status-dot" aria-hidden="true"></span>
+        Buscando práctica profesional
+      </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  </header>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span>Buscando práctica profesional</span><span class="ticker-sep">✳</span>
+        <span>Nuevos retos</span><span class="ticker-sep">✳</span>
+        <span>Full-stack</span><span class="ticker-sep">✳</span>
+        <span>Ciberseguridad</span><span class="ticker-sep">✳</span>
+        <span>Concepción · Chile</span><span class="ticker-sep">✳</span>
+        <span>Universidad San Sebastián</span><span class="ticker-sep">✳</span>
+      </div>
+      <div class="ticker-group">
+        <span>Buscando práctica profesional</span><span class="ticker-sep">✳</span>
+        <span>Nuevos retos</span><span class="ticker-sep">✳</span>
+        <span>Full-stack</span><span class="ticker-sep">✳</span>
+        <span>Ciberseguridad</span><span class="ticker-sep">✳</span>
+        <span>Concepción · Chile</span><span class="ticker-sep">✳</span>
+        <span>Universidad San Sebastián</span><span class="ticker-sep">✳</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-stage">
+          <div class="hero-main">
+            <div class="hero-meta">
+              <span>CH 00 / PERFIL</span>
+              <span class="hero-meta-right">36°49′S · 73°02′W</span>
+            </div>
+
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">+</span> Hola, soy</p>
+              <h1 class="hero-title" id="hero-title">
+                <span class="title-line">Vicente</span>
+                <span class="title-line">González<span class="accent">.</span></span>
+              </h1>
+              <p class="hero-role">Ingeniería Civil Informática <span>· USS Concepción</span></p>
+              <p class="hero-lead">
+                Estudiante de Ingeniería Civil Informática en la <strong>Universidad San Sebastián</strong>.
+                Construyo productos <strong>full-stack</strong>, cuido el detalle del software y paso
+                buen tiempo entendiendo cómo se rompen las cosas en <strong>ciberseguridad</strong>.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button--dark" href="#proyectos">
+                  Ver proyectos
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+                <a class="button button--ghost" href="#contacto">Hablemos</a>
+              </div>
+            </div>
+
+            <div class="hero-facts">
+              <div class="hero-fact">
+                <span>BASADO EN</span>
+                <strong>Concepción, Chile</strong>
+              </div>
+              <div class="hero-fact">
+                <span>ESTUDIANDO</span>
+                <strong>Ing. Civil Informática</strong>
+              </div>
+              <div class="hero-fact">
+                <span>ENFOQUE</span>
+                <strong>Full-stack + ciberseguridad</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-aside" aria-label="Panel de disponibilidad y perfil">
+            <div class="window-bar window-bar--dark">
+              <span>STATUS.TERMINAL</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="hero-aside-body">
+              <div class="terminal" role="group" aria-label="Datos de perfil">
+                <div class="terminal-line"><span class="terminal-prompt">~/perfil $</span><span>whoami</span></div>
+                <div class="terminal-output">vicente_gonzalez</div>
+                <div class="terminal-line"><span class="terminal-prompt">~/perfil $</span><span>focus</span></div>
+                <div class="terminal-output">full_stack + cybersecurity</div>
+              </div>
+
+              <div class="orb-wrap" aria-hidden="true">
+                <span class="orb-label orb-label--top">FRONTEND / 01</span>
+                <span class="orb-label orb-label--left">USS / 2026</span>
+                <span class="orb-label orb-label--right">SEC / 03</span>
+                <span class="orb-label orb-label--bottom">BACKEND / 02</span>
+
+                <svg class="orb" viewBox="0 0 360 360" role="img" aria-label="Gráfico abstracto de perfil en blanco y negro">
+                  <defs>
+                    <pattern id="dot-pattern" width="7" height="7" patternUnits="userSpaceOnUse">
+                      <circle cx="1.4" cy="1.4" r="1.25" fill="#ffffff" opacity=".72"/>
+                    </pattern>
+                    <clipPath id="orb-clip"><circle cx="180" cy="180" r="133"/></clipPath>
+                  </defs>
+                  <g clip-path="url(#orb-clip)">
+                    <rect width="360" height="360" fill="url(#dot-pattern)"/>
+                    <circle cx="180" cy="180" r="96" fill="#090909"/>
+                    <circle cx="180" cy="180" r="62" fill="url(#dot-pattern)" opacity=".45"/>
+                  </g>
+                  <circle cx="180" cy="180" r="133" fill="none" stroke="#ffffff" stroke-opacity=".55"/>
+                  <circle cx="180" cy="180" r="106" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-dasharray="2 6"/>
+                  <line x1="180" y1="26" x2="180" y2="334" stroke="#ffffff" stroke-opacity=".18"/>
+                  <line x1="26" y1="180" x2="334" y2="180" stroke="#ffffff" stroke-opacity=".18"/>
+                  <circle cx="276" cy="111" r="6" fill="#c80000"/>
+                  <circle cx="276" cy="111" r="16" fill="none" stroke="#c80000" stroke-opacity=".55"/>
+                  <text x="52" y="328" fill="#ffffff" fill-opacity=".5" font-family="monospace" font-size="8" letter-spacing="1.5">36.8205° S / 73.0448° W</text>
+                </svg>
+
+                <div class="orb-center">
+                  <span>VG</span>
+                  <small>v.2026</small>
+                </div>
+              </div>
+
+              <div class="hero-status">
+                <div class="hero-status-main">
+                  <span class="status-led" aria-hidden="true"></span>
+                  <span>Buscando práctica profesional</span>
+                  <span class="status-slash" aria-hidden="true">/</span>
+                  <span>Nuevos retos</span>
+                </div>
+                <div class="hero-status-sub">
+                  <span>Disponible para conversar</span>
+                  <span data-local-time>--:-- CLT</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--snapshot" aria-labelledby="snapshot-heading">
+      <div class="container">
+        <div class="section-rail">
+          <span class="section-badge">01 / Snapshot</span>
+          <span class="rail-meta">ESTADO ACTUAL · NOV 2026</span>
+        </div>
+
+        <h2 class="sr-only" id="snapshot-heading">Métricas e indicadores clave</h2>
+
+        <div class="metrics-grid" data-reveal>
+          <article class="metric">
+            <div class="metric-top"><span>M.01</span><span class="metric-symbol" aria-hidden="true">↗</span></div>
+            <div class="metric-value"><span data-count="3">03</span></div>
+            <div class="metric-copy">
+              <h3>Proyectos desarrollados</h3>
+              <p>Del primer wireframe a algo que la gente puede usar.</p>
+            </div>
+            <div class="metric-foot"><span>BUILD</span><span class="metric-rule" aria-hidden="true"></span><span>03</span></div>
+          </article>
+
+          <article class="metric">
+            <div class="metric-top"><span>M.02</span><span class="metric-symbol" aria-hidden="true">◆</span></div>
+            <div class="metric-value"><span data-count="3">03</span></div>
+            <div class="metric-copy">
+              <h3>Certificaciones Fortinet</h3>
+              <p>NSE 1, NSE 2 y NSE 3 completadas.</p>
+            </div>
+            <div class="metric-foot"><span>SECURITY</span><span class="metric-rule" aria-hidden="true"></span><span>NSE</span></div>
+          </article>
+
+          <article class="metric">
+            <div class="metric-top"><span>M.03</span><span class="metric-symbol" aria-hidden="true">⌘</span></div>
+            <div class="metric-value"><span data-count="12">12</span></div>
+            <div class="metric-copy">
+              <h3>Tecnologías en uso</h3>
+              <p>Front-end, back-end, datos, mobile y herramientas.</p>
+            </div>
+            <div class="metric-foot"><span>STACK</span><span class="metric-rule" aria-hidden="true"></span><span>12</span></div>
+          </article>
+
+          <article class="metric metric--dark">
+            <div class="metric-top"><span>M.04</span><span class="metric-symbol" aria-hidden="true">✳</span></div>
+            <div class="metric-value"><span data-count="1">01</span><span class="metric-red-dot" aria-hidden="true"></span></div>
+            <div class="metric-copy">
+              <h3>Finalista Santander X</h3>
+              <p>Swipe &amp; Decide Chile · edición 2026.</p>
+            </div>
+            <div class="metric-foot"><span>RECOGNITION</span><span class="metric-rule" aria-hidden="true"></span><span>2026</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--projects" id="proyectos" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-rail">
+          <span class="section-badge">02 / Proyectos</span>
+          <span class="rail-meta">CH 02 / 06 · TRABAJO SELECCIONADO</span>
+        </div>
+
+        <div class="section-intro">
+          <h2 class="section-title" id="projects-heading">
+            Tres proyectos.<br>
+            <span class="outline">Tres problemas distintos.</span>
+          </h2>
+          <div class="section-intro-copy">
+            <p>Fintech, hardware y hábitos. Cada uno nació de una conversación, una necesidad concreta y bastante prueba y error.</p>
+            <span class="intro-note">Selecciona “Ver ficha” para mirar más de cerca.</span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card--split" data-project="swipe" data-reveal>
+            <div class="window-bar">
+              <span>PRJ_01 / SWIPE_DECIDE_CHILE</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span class="status-chip status-chip--red"><span class="chip-dot"></span>Finalista</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3>Swipe &amp; Decide Chile</h3>
+                <p class="project-summary">
+                  Fintech educativa que convierte decisiones financieras en un juego. Simula escenarios
+                  reales de ahorro, deuda e inversión para jóvenes que están empezando a manejar su plata.
+                </p>
+                <ul class="project-tags" aria-label="Tecnologías del proyecto">
+                  <li>React</li><li>Node.js</li><li>PostgreSQL</li>
+                </ul>
+                <span class="project-award">✳ Santander X 2026 · Finalista nacional</span>
+              </div>
+
+              <div class="project-visual project-visual--swipe" aria-hidden="true">
+                <span class="visual-label">CASE_001 / FINTECH EDUCATIVA</span>
+                <div class="swipe-stack">
+                  <div class="swipe-card swipe-card--back">
+                    <span class="mini-mono">ESCENARIO 03 / 08</span>
+                    <span class="back-line"></span>
+                    <span class="back-line back-line--short"></span>
+                  </div>
+                  <div class="swipe-card swipe-card--front">
+                    <div class="mini-row"><span class="mini-mono">DECISIÓN 02 / 08</span><span class="mini-mono">CLP</span></div>
+                    <p class="swipe-question">¿Qué haces con tu prima?</p>
+                    <div class="swipe-amount">$250.000 <small>pesos</small></div>
+                    <div class="swipe-option"><span>Ahorrar para el viaje</span><span>+6%</span></div>
+                    <div class="swipe-option swipe-option--muted"><span>Comprar ahora</span><span>−12%</span></div>
+                    <div class="swipe-controls"><span>←</span><span class="swipe-controls-label">DESLIZA</span><span>→</span></div>
+                  </div>
+                </div>
+                <span class="visual-caption">APRENDE / EXPERIMENTA / DECIDE</span>
+              </div>
+            </div>
+
+            <div class="project-foot">
+              <div class="project-progress">
+                <span class="progress-label">Avance</span>
+                <div class="progress-track"><span class="progress-fill" style="--progress:92%"></span></div>
+              </div>
+              <span class="progress-value">92%</span>
+              <button class="project-open" type="button" data-project-open="swipe">
+                Ver ficha
+                <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--stacked project-card--dark" data-project="mediaseis" data-reveal>
+            <div class="window-bar window-bar--dark">
+              <span>PRJ_02 / MEDIASEIS</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span class="status-chip status-chip--on-dark"><span class="chip-dot"></span>En desarrollo</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3>Mediaseis</h3>
+                <p class="project-summary">
+                  Dispensador inteligente de pastillas con recordatorios y monitoreo. Un sistema IoT
+                  pensado para acompañar tratamientos y mantener tranquilos a quienes cuidan.
+                </p>
+                <ul class="project-tags project-tags--dark" aria-label="Tecnologías del proyecto">
+                  <li>ESP32</li><li>MQTT</li><li>React</li>
+                </ul>
+              </div>
+
+              <div class="project-visual project-visual--iot" aria-hidden="true">
+                <span class="visual-label visual-label--light">CASE_002 / HARDWARE + SOFTWARE</span>
+                <div class="iot-device">
+                  <div class="iot-top"><span>MEDIASEIS</span><span>●</span></div>
+                  <div class="iot-screen">
+                    <span>PRÓXIMA DOSIS</span>
+                    <strong>08:30</strong>
+                    <small>2 / 3 COMPLETADAS</small>
+                  </div>
+                  <div class="iot-pills">
+                    <span class="pill pill--on"></span><span class="pill pill--on"></span><span class="pill pill--on"></span>
+                    <span class="pill"></span><span class="pill"></span><span class="pill"></span>
+                  </div>
+                  <div class="iot-slot"><span></span><span></span><span></span></div>
+                </div>
+                <div class="iot-readout">
+                  <span>DISPOSITIVO / ONLINE</span>
+                  <span>99.2% UPTIME</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-foot project-foot--dark">
+              <div class="project-progress">
+                <span class="progress-label">Avance</span>
+                <div class="progress-track"><span class="progress-fill" style="--progress:76%"></span></div>
+              </div>
+              <span class="progress-value">76%</span>
+              <button class="project-open project-open--dark" type="button" data-project-open="mediaseis">
+                Ver ficha
+                <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--stacked" data-project="habitos" data-reveal>
+            <div class="window-bar">
+              <span>PRJ_03 / HABITS_&amp;_POMODORO</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span class="status-chip"><span class="chip-dot"></span>MVP activo</span>
+                  <span class="project-year">2025—26</span>
+                </div>
+                <h3>App de Hábitos<br>&amp; Pomodoro</h3>
+                <p class="project-summary">
+                  Una app para construir rutinas sin fricción: sesiones de enfoque, rachas,
+                  recordatorios y estadísticas que funcionan incluso sin conexión.
+                </p>
+                <ul class="project-tags" aria-label="Tecnologías del proyecto">
+                  <li>React Native</li><li>Expo</li><li>SQLite</li>
+                </ul>
+              </div>
+
+              <div class="project-visual project-visual--habits" aria-hidden="true">
+                <span class="visual-label">CASE_003 / MOBILE FIRST</span>
+                <div class="habit-ui">
+                  <div class="pomodoro-card">
+                    <div class="mini-row"><span class="mini-mono">ENFOQUE</span><span class="mini-mono">01 / 04</span></div>
+                    <div class="pomodoro-ring">
+                      <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="41" fill="none" stroke="#e0e0e0" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="41" fill="none" stroke="#c80000" stroke-width="2" stroke-dasharray="190 258" transform="rotate(-90 50 50)"/>
+                      </svg>
+                      <span>24:13</span>
+                    </div>
+                    <div class="pomodoro-status"><span>CONCENTRACIÓN</span><span>●</span></div>
+                  </div>
+                  <div class="habit-card">
+                    <div class="mini-row"><span class="mini-mono">RACHA</span><span class="mini-mono">12 DÍAS</span></div>
+                    <div class="habit-days">
+                      <span class="is-done">L</span><span class="is-done">M</span><span class="is-done">X</span>
+                      <span class="is-done">J</span><span class="is-done">V</span><span class="is-today">S</span><span>D</span>
+                    </div>
+                    <div class="habit-stats"><span>8 sesiones</span><span>3 h 24 m</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-foot">
+              <div class="project-progress">
+                <span class="progress-label">Avance</span>
+                <div class="progress-track"><span class="progress-fill" style="--progress:86%"></span></div>
+              </div>
+              <span class="progress-value">86%</span>
+              <button class="project-open" type="button" data-project-open="habitos">
+                Ver ficha
+                <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--stack" id="stack" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-rail">
+          <span class="section-badge">03 / Stack &amp; Actividad</span>
+          <span class="rail-meta">CH 03 / 06 · DATOS ABIERTOS</span>
+        </div>
+
+        <div class="section-intro section-intro--compact">
+          <h2 class="section-title" id="stack-heading">
+            Herramientas<br>
+            <span class="outline">en movimiento.</span>
+          </h2>
+          <div class="section-intro-copy">
+            <p>Las piezas que uso para llevar una idea desde el wireframe hasta producción. Sin rankings inventados: niveles estimados por uso real en proyectos.</p>
+            <span class="intro-note">Actividad de los últimos 12 meses.</span>
+          </div>
+        </div>
+
+        <div class="stack-layout">
+          <article class="stack-panel" data-reveal>
+            <div class="window-bar">
+              <span>STACK_MATRIX / 05 CORE</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="stack-content">
+              <div class="panel-heading">
+                <div>
+                  <span class="mini-label">TECNOLOGÍAS BASE</span>
+                  <h3 class="panel-title">Lo que uso para construir.</h3>
+                </div>
+                <span class="panel-index">05<span>/</span>Ω</span>
+              </div>
+
+              <div class="skill-list">
+                <div class="skill-row">
+                  <div class="skill-main"><span class="skill-index">01</span><strong>Python</strong><small>Scripting &amp; backend</small></div>
+                  <span class="skill-percent">80%</span>
+                  <div class="skill-track"><span style="--level:80%"></span></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-main"><span class="skill-index">02</span><strong>React</strong><small>Interfaces web</small></div>
+                  <span class="skill-percent">90%</span>
+                  <div class="skill-track"><span style="--level:90%"></span></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-main"><span class="skill-index">03</span><strong>Node.js</strong><small>APIs &amp; servicios</small></div>
+                  <span class="skill-percent">84%</span>
+                  <div class="skill-track"><span style="--level:84%"></span></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-main"><span class="skill-index">04</span><strong>Git</strong><small>Versionado &amp; deploy</small></div>
+                  <span class="skill-percent">88%</span>
+                  <div class="skill-track"><span style="--level:88%"></span></div>
+                </div>
+                <div class="skill-row">
+                  <div class="skill-main"><span class="skill-index">05</span><strong>SQL</strong><small>Modelado de datos</small></div>
+                  <span class="skill-percent">82%</span>
+                  <div class="skill-track"><span style="--level:82%"></span></div>
+                </div>
+              </div>
+
+              <div class="stack-extra">
+                <span class="mini-label">TAMBIÉN EN LA CAJA</span>
+                <div class="tech-cloud">
+                  <span>TypeScript</span><span>Express</span><span>Tailwind</span>
+                  <span>PostgreSQL</span><span>SQLite</span><span>Expo</span>
+                  <span>Linux</span><span>Kali</span><span>Docker ↗</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity-panel" data-reveal>
+            <div class="window-bar">
+              <span>ACTIVITY_LOG / ÚLTIMOS 12 MESES</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-head">
+                <div class="activity-total">
+                  <span class="mini-label">CONTRIBUCIONES</span>
+                  <strong data-total-contributions>000</strong>
+                </div>
+                <div class="activity-stats">
+                  <div><strong data-active-days>000</strong><span>días activos</span></div>
+                  <div><strong data-longest-streak>00</strong><span>racha máx.</span></div>
+                  <div><strong data-week-average>0</strong><span>prom. semanal</span></div>
+                </div>
+              </div>
+
+              <div class="chart-block">
+                <div class="chart-title"><span>COMMITS / SEMANA</span><span>ÚLTIMAS 20 SEMANAS</span></div>
+                <div class="commit-chart" id="commit-chart" aria-hidden="true"></div>
+              </div>
+
+              <div class="activity-insights">
+                <div><span class="mini-label">MEJOR SEMANA</span><strong><span data-best-week>--</span> <small>commits</small></strong></div>
+                <div><span class="mini-label">PROM. DÍA ACTIVO</span><strong><span data-daily-average>--</span> <small>commits</small></strong></div>
+                <div><span class="mini-label">FOCO RECIENTE</span><strong>Node.js <small>/ SEC</small></strong></div>
+              </div>
+
+              <div class="activity-foot">
+                <span><span class="status-led status-led--small" aria-hidden="true"></span> Actividad reciente</span>
+                <span>FUENTE / ACTIVIDAD · NOV 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--roadmap" id="roadmap" aria-labelledby="roadmap-heading">
+      <div class="container">
+        <div class="section-rail">
+          <span class="section-badge">04 / Roadmap</span>
+          <span class="rail-meta">CH 04 / 06 · Q4 2026</span>
+        </div>
+
+        <div class="section-intro">
+          <h2 class="section-title" id="roadmap-heading">
+            Aprender también<br>
+            <span class="outline">es un sistema.</span>
+          </h2>
+          <div class="section-intro-copy">
+            <p>Lo que estoy construyendo e investigando ahora, ordenado como lo resolvería: primero lo urgente, después lo que viene.</p>
+            <span class="intro-note">Mueve las tarjetas o cambia su estado para probar el tablero.</span>
+          </div>
+        </div>
+
+        <div class="roadmap-board" data-board>
+          <div class="roadmap-toolbar">
+            <div class="board-filters" role="group" aria-label="Filtrar objetivos por área">
+              <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+              <button class="filter-btn" type="button" data-filter="security" aria-pressed="false">Ciberseguridad</button>
+              <button class="filter-btn" type="button" data-filter="dev" aria-pressed="false">Desarrollo</button>
+              <button class="filter-btn" type="button" data-filter="cloud" aria-pressed="false">Cloud / DevOps</button>
+            </div>
+            <div class="board-meta">
+              <div class="board-progress">
+                <span>Progreso</span>
+                <div class="board-progress-track"><span data-board-progress-bar></span></div>
+                <strong data-board-progress-label>0%</strong>
+              </div>
+              <button class="reset-btn" type="button" data-board-reset title="Restaurar el tablero original">
+                <span aria-hidden="true">↺</span> Reset
+              </button>
+            </div>
+          </div>
+
+          <div class="kanban">
+            <section class="kanban-col" data-phase="now" aria-labelledby="col-now">
+              <header class="kanban-head">
+                <div><span class="phase-code">Q.01</span><h3 id="col-now">En curso</h3></div>
+                <span class="col-count" data-count-for="now">00</span>
+              </header>
+              <div class="kanban-cards" data-task-list="now"></div>
+            </section>
+
+            <section class="kanban-col" data-phase="next" aria-labelledby="col-next">
+              <header class="kanban-head">
+                <div><span class="phase-code">Q.02</span><h3 id="col-next">Siguiente</h3></div>
+                <span class="col-count" data-count-for="next">00</span>
+              </header>
+              <div class="kanban-cards" data-task-list="next"></div>
+            </section>
+
+            <section class="kanban-col" data-phase="done" aria-labelledby="col-done">
+              <header class="kanban-head">
+                <div><span class="phase-code">Q.03</span><h3 id="col-done">Completado</h3></div>
+                <span class="col-count" data-count-for="done">00</span>
+              </header>
+              <div class="kanban-cards" data-task-list="done"></div>
+            </section>
+          </div>
+
+          <div class="board-foot">
+            <span><span class="board-key" aria-hidden="true">↔</span> Arrastra una tarjeta para moverla</span>
+            <span><span class="board-key" aria-hidden="true">✓</span> O usa el botón de estado</span>
+            <span class="board-saved" data-board-saved>GUARDADO LOCALMENTE</span>
+          </div>
+          <noscript><p class="board-noscript">Activa JavaScript para interactuar con el tablero. El contenido sigue disponible en esta página.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-rail">
+          <span class="section-badge">05 / Contacto</span>
+          <span class="rail-meta">CH 05 / 06 · ABIERTO A CONVERSAR</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card" data-reveal>
+            <div class="window-bar window-bar--dark">
+              <span>CONTACT.SH / EJECUTAR</span>
+              <div class="window-controls" aria-hidden="true"><span>[ ]</span><span>—</span><span>×</span></div>
+            </div>
+            <div class="contact-body">
+              <div class="contact-main">
+                <span class="mini-label mini-label--light">SIGUIENTE PASO</span>
+                <h2 id="contact-heading">¿Construimos<br>algo<span class="accent">?</span></h2>
+                <p>
+                  Estoy buscando mi primera práctica profesional y nuevos retos donde pueda aportar
+                  desde el primer día. Si tienes una idea, un equipo o una buena conversación pendiente,
+                  escríbeme.
+                </p>
+                <a class="contact-mail" href="mailto:gonzalezvicenet@gmail.com">
+                  gonzalezvicenet@gmail.com
+                  <svg aria-hidden="true" viewBox="0 0 16 16" width="18" height="18"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+              </div>
+
+              <div class="contact-side" aria-hidden="true">
+                <div class="contact-orbit">
+                  <span class="contact-orbit-dot"></span>
+                  <span>OPEN<br>TO<br>WORK</span>
+                </div>
+                <div class="contact-coordinates">36°49′S<br>73°02′W</div>
+              </div>
+
+              <div class="contact-status">
+                <div><span class="status-led" aria-hidden="true"></span><span>Buscando práctica profesional / nuevos retos</span></div>
+                <div class="contact-clock"><span data-local-time>--:--</span> · Concepción, CL</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-panel" data-reveal>
+            <div class="quick-head">
+              <span class="mini-label">ACCESOS DIRECTOS</span>
+              <span class="quick-code">ACT / 04</span>
+            </div>
+            <h3>Sin vueltas.</h3>
+            <p class="quick-copy">Código, trayectoria y una vía directa para contactarme.</p>
+
+            <div class="quick-actions">
+              <a class="quick-action quick-action--black" href="https://github.com/viceeex" target="_blank" rel="noreferrer noopener">
+                <span class="quick-index">01</span>
+                <span class="quick-label">Ver GitHub<svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <span class="quick-note">github.com</span>
+              </a>
+              <a class="quick-action quick-action--red" href="mailto:gonzalezvicenet@gmail.com">
+                <span class="quick-index">02</span>
+                <span class="quick-label">Contactar por Email<svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path d="M2 4h12v9H2zM2 4l6 5 6-5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span>
+                <span class="quick-note">Respuesta en 24–48 h</span>
+              </a>
+              <a class="quick-action" href="assets/CV-Vicente-Gonzalez.pdf" download="CV-Vicente-Gonzalez.pdf">
+                <span class="quick-index">03</span>
+                <span class="quick-label">Descargar CV<svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path d="M8 2v9M4 8l4 4 4-4M2 14h12" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+                <span class="quick-note">PDF · 1 página</span>
+              </a>
+              <a class="quick-action" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+                <span class="quick-index">04</span>
+                <span class="quick-label">Ver Repositorios<svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <span class="quick-note">Proyectos y experimentos</span>
+              </a>
+            </div>
+
+            <div class="quick-foot"><span>USS / ING. CIVIL INFORMÁTICA</span><span class="quick-foot-dot" aria-hidden="true">✳</span><span>CONCEPCIÓN</span></div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-brand">
+            <span class="brand-mark brand-mark--small" aria-hidden="true">VG<span>.</span></span>
+            <div><strong>Vicente González</strong><span>Portafolio 2026</span></div>
+          </div>
+          <p>Diseñado y construido en Concepción.<br>Tipografía, café y ganas de aprender.</p>
+          <div class="footer-links">
+            <a href="#inicio">Volver arriba ↑</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
+            <a href="mailto:gonzalezvicenet@gmail.com">Email ↗</a>
+          </div>
+          <div class="footer-bottom">
+            <span>© 2026 VICENTE GONZÁLEZ</span>
+            <span>END OF FILE / 06</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="case-dialog" id="project-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+    <div class="dialog-shell">
+      <div class="window-bar">
+        <span id="dialog-code">PRJ_01 / FICHA</span>
+        <button class="dialog-x" type="button" data-dialog-close aria-label="Cerrar ficha">[ CERRAR ]</button>
+      </div>
+      <div class="dialog-content">
+        <div class="dialog-kicker"><span class="status-chip" id="dialog-status">FINALISTA</span><span id="dialog-year">2026</span></div>
+        <h2 id="dialog-title">Swipe &amp; Decide Chile</h2>
+        <p class="dialog-lead" id="dialog-lead"></p>
+        <div class="dialog-progress">
+          <div class="dialog-progress-head"><span>Avance del proyecto</span><strong id="dialog-progress-label">92%</strong></div>
+          <div class="progress-track"><span id="dialog-progress-bar"></span></div>
+        </div>
+        <dl class="dialog-meta">
+          <div><dt>Rol</dt><dd id="dialog-role"></dd></div>
+          <div><dt>Stack</dt><dd id="dialog-stack"></dd></div>
+          <div><dt>Reto</dt><dd id="dialog-challenge"></dd></div>
+          <div><dt>Aprendizaje</dt><dd id="dialog-learning"></dd></div>
+        </dl>
+        <div class="dialog-actions">
+          <a class="button button--dark" href="#contacto" data-dialog-contact>Conversemos sobre este proyecto</a>
+          <button class="text-button" type="button" data-dialog-close>Cerrar ficha</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

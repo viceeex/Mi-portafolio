@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>CV — Vicente González</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+
+    :root {
+      --ink: #000000;
+      --red: #c80000;
+      --muted: #626262;
+      --line: #d8d8d8;
+      --mono: "JetBrains Mono", "Courier New", monospace;
+      --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ececec;
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top {
+      background: var(--ink);
+      color: #ffffff;
+      padding: 10mm 13mm 9mm;
+    }
+
+    .top-meta {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 3mm;
+      border-bottom: 1px solid #3a3a3a;
+      color: #a5a5a5;
+      font-family: var(--mono);
+      font-size: 6.7pt;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 8mm;
+      padding-top: 7mm;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--mono);
+      font-size: 31pt;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.075em;
+      text-transform: uppercase;
+    }
+
+    h1 span { color: var(--red); }
+
+    .role {
+      max-width: 72mm;
+      margin: 0 0 1mm;
+      font-family: var(--mono);
+      font-size: 7.2pt;
+      line-height: 1.5;
+      letter-spacing: 0.045em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .role small {
+      display: block;
+      margin-top: 1.4mm;
+      color: #8e8e8e;
+      font-size: 6.4pt;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5mm 10mm;
+      margin-top: 7mm;
+      padding-top: 4mm;
+      border-top: 1px solid #3a3a3a;
+      font-family: var(--mono);
+      font-size: 6.7pt;
+      line-height: 1.3;
+      letter-spacing: 0.015em;
+    }
+
+    .contact-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 2.2mm;
+    }
+
+    .contact-bar i {
+      width: 1.4mm;
+      height: 1.4mm;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
+      gap: 0;
+      padding: 8mm 13mm 7mm;
+    }
+
+    .main-col {
+      padding-right: 9mm;
+      border-right: 1px solid var(--line);
+    }
+
+    .side-col {
+      padding-left: 8mm;
+    }
+
+    .block + .block { margin-top: 6.5mm; }
+
+    .block-title {
+      display: flex;
+      align-items: center;
+      gap: 2.5mm;
+      margin: 0 0 3.2mm;
+      font-family: var(--mono);
+      font-size: 7pt;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+    }
+
+    .block-title::before {
+      content: "";
+      width: 2.2mm;
+      height: 2.2mm;
+      background: var(--red);
+    }
+
+    .lead {
+      margin: 0;
+      color: #3e3e3e;
+      font-size: 8.5pt;
+      line-height: 1.62;
+    }
+
+    .lead strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .education {
+      padding: 3.4mm 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 5mm;
+    }
+
+    .row-head h3 {
+      margin: 0;
+      font-family: var(--mono);
+      font-size: 8.3pt;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .row-head span {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 5.9pt;
+      letter-spacing: 0.04em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .education p {
+      margin: 1.4mm 0 0;
+      color: var(--muted);
+      font-size: 7.3pt;
+      line-height: 1.5;
+    }
+
+    .project {
+      padding: 3.2mm 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .project:last-child {
+      padding-bottom: 0;
+    }
+
+    .project-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 5mm;
+    }
+
+    .project-head h3 {
+      margin: 0;
+      font-family: var(--mono);
+      font-size: 8.1pt;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+    }
+
+    .project-head span {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 5.6pt;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+    }
+
+    .project > p {
+      margin: 1.3mm 0 0;
+      color: #464646;
+      font-size: 7.1pt;
+      line-height: 1.52;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2mm;
+      margin-top: 1.8mm;
+    }
+
+    .tags span {
+      padding: 0.8mm 1.4mm;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 5.1pt;
+      line-height: 1.2;
+    }
+
+    .skill {
+      margin-bottom: 3mm;
+    }
+
+    .skill-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 4mm;
+      font-family: var(--mono);
+      font-size: 6.5pt;
+      line-height: 1.2;
+    }
+
+    .skill-head span:last-child {
+      color: var(--muted);
+      font-size: 5.5pt;
+    }
+
+    .skill-bar {
+      height: 1mm;
+      margin-top: 1.4mm;
+      background: #e5e5e5;
+    }
+
+    .skill-bar i {
+      display: block;
+      width: var(--w);
+      height: 100%;
+      background: var(--ink);
+    }
+
+    .skill:nth-child(3) .skill-bar i,
+    .skill:nth-child(6) .skill-bar i {
+      background: var(--red);
+    }
+
+    .plain-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .plain-list li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 3mm;
+      padding: 2mm 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 6.9pt;
+      line-height: 1.35;
+    }
+
+    .plain-list li:first-child { padding-top: 0; }
+    .plain-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .plain-list span {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 5.5pt;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .cert {
+      padding: 2.5mm 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cert:first-of-type { padding-top: 0; }
+    .cert:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .cert strong {
+      display: block;
+      font-family: var(--mono);
+      font-size: 6.9pt;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .cert span {
+      display: block;
+      margin-top: 0.8mm;
+      color: var(--muted);
+      font-size: 6.1pt;
+      line-height: 1.4;
+    }
+
+    .side-note {
+      margin-top: 5.5mm;
+      padding: 3mm;
+      border: 1px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 5.8pt;
+      line-height: 1.55;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .side-note span {
+      display: block;
+      margin-bottom: 1mm;
+      color: var(--red);
+      font-size: 5.2pt;
+      letter-spacing: 0.07em;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8mm;
+      margin: 0 13mm;
+      padding: 3mm 0 4.5mm;
+      border-top: 1px solid var(--ink);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 5.4pt;
+      line-height: 1.3;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .footer strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    @media screen {
+      body { padding: 24px 0; }
+      .sheet { box-shadow: 0 0 0 1px #bdbdbd; }
+    }
+
+    @media print {
+      html,
+      body { background: #ffffff; }
+      .sheet { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="top">
+      <div class="top-meta">
+        <span>Currículum / 2026</span>
+        <span>36°49′S · 73°02′W / Concepción, Chile</span>
+      </div>
+      <div class="name-row">
+        <h1>Vicente<br>González<span>.</span></h1>
+        <p class="role">
+          Ingeniería Civil Informática
+          <small>Universidad San Sebastián<br>Full-stack · Ciberseguridad</small>
+        </p>
+      </div>
+      <div class="contact-bar">
+        <span><i></i> gonzalezvicenet@gmail.com</span>
+        <span><i></i> github.com</span>
+        <span><i></i> Concepción, Chile</span>
+        <span><i></i> Buscando práctica profesional</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="main-col">
+        <section class="block">
+          <h2 class="block-title">Perfil</h2>
+          <p class="lead">
+            Estudiante de Ingeniería Civil Informática con experiencia construyendo productos
+            <strong>full-stack</strong>: desde interfaces en React hasta APIs en Node.js y modelos de datos SQL.
+            Interés activo en <strong>ciberseguridad</strong>, sistemas IoT y software que resuelva problemas concretos.
+            Busco una práctica profesional para aportar en un equipo real y seguir aprendiendo con criterio.
+          </p>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Formación</h2>
+          <div class="education">
+            <div class="row-head">
+              <h3>Ingeniería Civil Informática</h3>
+              <span>En curso</span>
+            </div>
+            <p>Universidad San Sebastián · Sede Concepción, Chile<br>Enfoque en desarrollo de software, bases de datos, redes y seguridad.</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Proyectos seleccionados</h2>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Swipe &amp; Decide Chile</h3>
+              <span>Finalista Santander X 2026</span>
+            </div>
+            <p>Fintech educativa que simula decisiones de ahorro, deuda e inversión para jóvenes. Producto, front-end y modelo de datos.</p>
+            <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Mediaseis</h3>
+              <span>IoT · En desarrollo</span>
+            </div>
+            <p>Dispensador inteligente de pastillas con recordatorios, monitoreo y alertas para pacientes y cuidadores.</p>
+            <div class="tags"><span>ESP32</span><span>MQTT</span><span>React</span></div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>App de Hábitos &amp; Pomodoro</h3>
+              <span>Mobile · MVP activo</span>
+            </div>
+            <p>App móvil para construir rutinas sin fricción: Pomodoro, rachas, recordatorios y estadísticas con funcionamiento offline.</p>
+            <div class="tags"><span>React Native</span><span>Expo</span><span>SQLite</span></div>
+          </article>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Ahora mismo</h2>
+          <ul class="plain-list">
+            <li>Laboratorios de pentesting con Kali Linux + UTM <span>En curso</span></li>
+            <li>API y dashboard de Swipe &amp; Decide <span>Desarrollo</span></li>
+            <li>Fundamentos de Docker, CI/CD y AWS <span>Próximo</span></li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="side-col">
+        <section class="block">
+          <h2 class="block-title">Herramientas</h2>
+          <div class="skill">
+            <div class="skill-head"><span>React</span><span>Avanzado</span></div>
+            <div class="skill-bar"><i style="--w:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Node.js</span><span>Intermedio+</span></div>
+            <div class="skill-bar"><i style="--w:84%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Python</span><span>Intermedio</span></div>
+            <div class="skill-bar"><i style="--w:80%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>SQL</span><span>Intermedio</span></div>
+            <div class="skill-bar"><i style="--w:82%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Git</span><span>Intermedio+</span></div>
+            <div class="skill-bar"><i style="--w:88%"></i></div>
+          </div>
+          <div class="tags">
+            <span>TypeScript</span><span>Express</span><span>PostgreSQL</span>
+            <span>React Native</span><span>Expo</span><span>Linux</span>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Certificaciones</h2>
+          <div class="cert">
+            <strong>Fortinet NSE 1</strong>
+            <span>Network Security Associate · 2025</span>
+          </div>
+          <div class="cert">
+            <strong>Fortinet NSE 2</strong>
+            <span>Network Security Associate · 2025</span>
+          </div>
+          <div class="cert">
+            <strong>Fortinet NSE 3</strong>
+            <span>Network Security Associate · 2025</span>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Idiomas</h2>
+          <ul class="plain-list">
+            <li>Español <span>Nativo</span></li>
+            <li>Inglés <span>Intermedio B2</span></li>
+          </ul>
+        </section>
+
+        <div class="side-note">
+          <span>Disponibilidad</span>
+          Abierto a práctica profesional<br>y nuevos retos.
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <span><strong>Vicente González</strong> · Portafolio 2026</span>
+      <span>gonzalezvicenet@gmail.com / github.com</span>
+    </footer>
+  </main>
+</body>
+</html>
